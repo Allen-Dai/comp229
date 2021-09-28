@@ -1,0 +1,28 @@
+.navbar{
+    background: black;
+    display: flex;
+    padding: 10px;
+}
+
+.nav-brand{
+    font-weight: 1000;
+    margin-left: 10px;
+}
+
+.nav-item{
+    margin-left: auto;
+}
+
+.nav-item > a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar > a, .nav-item > a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item > a:hover{
+    text-decoration: underline;
+}
