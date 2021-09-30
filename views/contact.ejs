@@ -1,6 +1,49 @@
 <%- include partials/header.ejs %>
 <%- include partials/navbar.ejs %>
-  <main>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </main>
+<main>
+    <div class="container py-5">
+
+        <div class="shadow round p-5 mt-5 bg-light rounded">
+            <div>
+                <h1 class="text-center mb-3">Contact Me</h1>
+                <div>
+
+                    <div class="row m-5">
+                    
+                        <div class="col-sm" align="center">
+                        <div>
+                            <i class="fas fa-phone-square-alt fa-3x"></i>
+                            <p>xxx-xxx-xxxx </p>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-envelope-square fa-3x"></i>
+                            <p>xxx@xxx.com</p>
+                        </div>
+
+                        <div>
+                            <a class="text-reset" href="https://github.com/allen-day" taget="_blank"><i class="fab fa-github fa-3x"></i></a>
+                            <p>github.com/allen-day</p>
+                        </div>
+
+                        </div>
+
+                        <form class="col-sm " align="center">
+                            <div class="mb-4">
+                                    <input class="form-control" name="name" type="text" placeholder="Name"></input>
+                            </div>
+                            <div class="mb-4">
+                                    <input class="form-control" name="email" type="email" placeholder="Email"></input>
+                            </div>
+                            <div class="mb-4">
+                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="submit">SEND</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+</main>
