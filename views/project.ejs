@@ -1,8 +1,48 @@
 <%- include partials/header.ejs %>
 <%- include partials/navbar.ejs %>
-  <main>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </main>
+<main>
+    <!-- Using bootstrap grid -->
+
+    <!-- Row -->
+    <div class="container row mx-auto" style="margin-top: 13em;">
+        <!-- Cols -->
+        <div class="col mx-3 card">
+            <img src="https://cdn.discordapp.com/attachments/666278328772067353/893962624595812422/unknown.png" class="img-fluid ing-thumbnail">
+            <a href="http://studentweb.cencol.ca/zdai11/index.html" target="_blank">
+            <div class="card-overlay">
+                <h4>School Project - Portfolio</h4>
+                <h4>My first portfolio project</h4>
+            </div>
+            </a>
+        </div>
+
+        <div class="col mx-3 bg-white card">
+            <div class="card-overlay">
+                <h4>Example</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Row -->
+    <div class="container row mx-auto" style="margin-top: 5em;">
+        <!-- Cols -->
+        <div class="col mx-3 card">
+            <a href="#">
+                <img src="https://cdn.discordapp.com/attachments/666278328772067353/893962624595812422/unknown.png" class="img-fluid ing-thumbnail">
+            </a>
+            
+            <div class="card-overlay">
+                <h4>Example</h4>
+            </div>
+
+        </div>
+        <div class="col mx-3">
+        </div>
+    </div>
+    <div class="container row mx-auto" style="margin-top: 5em;">
+    </div>
+
+</main>
 
 <%- include partials/footer.ejs %>
