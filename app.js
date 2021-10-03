@@ -1,3 +1,10 @@
+/* 
+ * @file app.js
+ * @author Allen Day / ZEZHAO DAI
+ * @student_id 301136181
+ * @date sept/30/2021
+ */
+
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
