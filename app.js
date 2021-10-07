@@ -9,6 +9,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var indexRouter = require('./routes/index');
+var authRouter= require('./routes/auth');
 
 var app = express();
 const PORT = process.env.PORT || 3000;
@@ -25,4 +26,5 @@ app.use(cookieParser());
 
 
 app.use('/', indexRouter);
+app.use('/auth', authRouter);
 app.listen(PORT);
