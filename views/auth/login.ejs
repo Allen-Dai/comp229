@@ -1,33 +1,32 @@
 <%- include ../partials/header.ejs %>
 <%- include ../partials/navbar.ejs %>
 <main>
-    <div class="container w-25" style="margin-top: 13em">
+    <div class="container" style="margin-top: 13em">
+        <div class="row align-items-center justify-content-center">
+            <div class="shadow round p-5 bg-light rounded col-lg-4 col-md-6 col-sm-8 col-10">
 
-        <div class="shadow round p-5 bg-light rounded">
-            <div>
                 <h1 class="text-center mb-3">Login</h1>
-                <div>
-                    <!-- Row -->
-                    <div class="row m-5">
 
+                <!-- Row -->
+                <div class="m-5 ">
 
-                        <!-- Col *form-->
-                        <form class="col-sm " align="center" method="POST">
-                            <div class="mb-4">
-                                    <input class="form-control" name="name" type="text" placeholder="Username"></input>
-                            </div>
-                            <div class="mb-4">
-                                    <input class="form-control" name="password" type="password" placeholder="Password"></input>
-                            </div>
-     
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="submit">SEND</button>
-                            </div>
-                        </form>
+                    <!-- Col *form-->
+                    <form class="" align="center" method="POST">
+                        <div class="mb-4">
+                            <input class="form-control" name="username" type="text" placeholder="Username" required></input>
+                        </div>
+                        <div class="mb-4">
+                            <input class="form-control" name="password" type="password" placeholder="Password" required></input>
+                        </div>
 
-                    </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="submit">Login</button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
+
 </main>
 
 <%- include ../partials/footer.ejs %>
