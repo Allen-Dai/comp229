@@ -14,6 +14,13 @@ var authRouter= require('./routes/auth');
 var app = express();
 const PORT = process.env.PORT || 3000;
 
+// connect to mongodb
+const mongoose = require('mongoose');
+const DB_URL = process.env.DB || 'mongodb://localhost:27017/';
+mongoose.connect(DB_URL)
+    .then(() => console.log('Conntected to database'))
+    .catch((err) => console.log(err));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
