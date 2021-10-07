@@ -5,7 +5,8 @@ const login = async (req, res) => {
 
     if (userExist != null){
         return res.redirect('/')
-    }
+    }   
+    return res.redirect('/login')
 }
 
 const index = (req, res) => {
