@@ -26,5 +26,5 @@ app.use(cookieParser());
 
 
 app.use('/', indexRouter);
-app.use('/auth', authRouter);
+app.use('/', authRouter);
 app.listen(PORT);
