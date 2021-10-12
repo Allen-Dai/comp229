@@ -34,6 +34,6 @@ app.use(cookieParser());
 
 
 app.use('/', indexRouter);
-app.use('/', authRouter);
+app.use('/login', authRouter);
 app.use('/secure', secureRouter)
 app.listen(PORT);
