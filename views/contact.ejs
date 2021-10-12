@@ -29,16 +29,16 @@
                         </div>
 
                         <!-- Col *form-->
-                        <form class="col-sm " align="center">
+                        <form class="col-sm " action="/secure" method="POST" align="center" autocomplete="off">
                             <div class="mb-4">
-                                    <input class="form-control" name="name" type="text" placeholder="Name"></input>
+                                    <input class="form-control" name="name" type="text" placeholder="Name" required></input>
                             </div>
                             <div class="mb-4">
-                                    <input class="form-control" name="email" type="email" placeholder="Email"></input>
+                                    <input class="form-control" name="phoneNumber" type="text" placeholder="Phone Number" required></input>
                             </div>
                             <div class="mb-4">
-                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                            </div>
+                                <input class="form-control" name="email" type="email" placeholder="Email" required></input>
+                        </div>
                             <div class="d-grid gap-2">
                                 <button class="btn btn-primary" type="submit">SEND</button>
                             </div>

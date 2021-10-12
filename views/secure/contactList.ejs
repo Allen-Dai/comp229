@@ -1,0 +1,18 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/navbar.ejs %>
+
+<% var contacts = contacts.sort(function(a, b) { %>
+<%   return a.name.localeCompare(b.name); %>
+<% }); %>
+<main>
+    <div class="container" style="margin-top: 12em;">
+    <h1 class="text-white">Business Contacts:</h1>
+    <% for (let i = 0; i < contacts.length; i++) {%>
+        <% let name = contacts[i].name; let phoneNumber = contacts[i].phoneNumber; let email = contacts[i].email; let id = "id-" + contacts[i].id; let delId = contacts[i].id%>
+        <%- include ./update.ejs %>
+    <% } %> 
+    </div>
+</main>
+
+
+<%- include ../partials/footer.ejs %>

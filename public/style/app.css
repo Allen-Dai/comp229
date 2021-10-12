@@ -11,3 +11,11 @@
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px; 
 }
+
+.zoom{
+  transition: 0.1s ease;
+}
+.zoom:hover{
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}

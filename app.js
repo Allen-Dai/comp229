@@ -10,13 +10,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var indexRouter = require('./routes/index');
 var authRouter= require('./routes/auth');
+var secureRouter= require('./routes/secure');
 
 var app = express();
 const PORT = process.env.PORT || 3000;
 
 // connect to mongodb
 const mongoose = require('mongoose');
-const DB_URL = process.env.DB || 'mongodb://localhost:27017/';
+const DB_URL = process.env.DB || 'mongodb://localhost:27017/comp229';
 mongoose.connect(DB_URL)
     .then(() => console.log('Conntected to database'))
     .catch((err) => console.log(err));
@@ -34,4 +35,5 @@ app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/', authRouter);
+app.use('/secure', secureRouter)
 app.listen(PORT);
