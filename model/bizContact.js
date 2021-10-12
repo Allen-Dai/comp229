@@ -1,3 +1,10 @@
+/* 
+ * @file bizContact.js
+ * @author Allen Day / ZEZHAO DAI
+ * @student_id 301136181
+ * @date sept/30/2021
+ */
+
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 

@@ -1,12 +1,15 @@
 <%- include ../partials/header.ejs %>
 <%- include ../partials/navbar.ejs %>
 
+<%# Sort the list base on name, in alphabetical order. It is server sided, not great %>
 <% var contacts = contacts.sort(function(a, b) { %>
 <%   return a.name.localeCompare(b.name); %>
 <% }); %>
 <main>
+    <!-- Contact List -->
     <div class="container" style="margin-top: 12em;">
     <h1 class="text-white">Business Contacts:</h1>
+    <%# Loop through contacts and load them with update.ejs. Not efficient%>
     <% for (let i = 0; i < contacts.length; i++) {%>
         <% let name = contacts[i].name; let phoneNumber = contacts[i].phoneNumber; let email = contacts[i].email; let id = "id-" + contacts[i].id; let delId = contacts[i].id%>
         <%- include ./update.ejs %>

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const contactController = require('../controller/bizContact')
 
+/* Get */
 router.get('/', contactController.loadContacts);
   
 router.get('/:id', contactController.deleteContacts)
